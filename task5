@@ -1,0 +1,19 @@
+import random
+n=int (input ('введите число n: '))
+r= random.randint(1,n)
+k= int (input ('введите число попыток k: '))
+while k!=0:
+  ans= int (input ('угадай число: '))
+  if ans==r:
+    print('you win!')
+    break
+  if ans>r:
+    print('ваше число больше')
+    k=k-1
+    print('осталось попыток:',k)
+  if ans<r:
+    print('ваше число меньше')
+    k=k-1
+    print('осталось попыток:',k)
+if k==0:  
+  print('you lose...')
