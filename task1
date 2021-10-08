@@ -1,0 +1,6 @@
+num = int (input(('Enter number: ')))
+m = num % 2
+if m==0: 
+ print ('Число чётное')
+else:
+ print ('Число нечётное')
