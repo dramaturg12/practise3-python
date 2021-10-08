@@ -1,0 +1,11 @@
+num=int (input('enter number: '))
+five= num % 5
+sev = num % 7
+if five != 0 and sev !=0 :
+  print ('00')
+if five == 0 and sev !=0 :
+  print ('01')
+if five != 0 and sev ==0 :
+  print ('10')
+if five == 0 and sev ==0 :
+  print ('11')
